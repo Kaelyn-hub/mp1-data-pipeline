@@ -29,11 +29,11 @@ def parse_arguments():
     parser.add_argument("--input",
                     "-i",
                     required=True,
-                    help="Path to input")   
+                    help="Path to input file")   
     parser.add_argument("--output",
                     "-o",
                     required=True,
-                    help="Patb to output")
+                    help="Path to output file")
     parser.add_argument("--format",
                     choices=["csv","json"],
                     default= "csv",
@@ -41,7 +41,7 @@ def parse_arguments():
     parser.add_argument("--verbose",
                     "-v",
                     action="store_true",
-                    help="Show detailed DEBUG messages")
+                    help="Enable verbose logging")
     args = parser.parse_args()
     return args
 
