@@ -64,7 +64,6 @@ def main():
     is_valid = validate_input(args.input)
     if not is_valid:
         sys.exit(1)
-    
     try:
         data = load_data(args.input)
     except ValueError:
