@@ -36,7 +36,7 @@ def load_yaml(filepath):
     with open(filepath, "r") as f:
         info = yaml.safe_load(f)
     logger.info(f"Loaded YAML file: {filepath}")
-
+    return info
 
 def load_data(filepath):
     """Load a file based on its extension.
